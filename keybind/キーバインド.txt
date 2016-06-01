@@ -1,0 +1,7 @@
+Caps Lock → Ctrl
+に変更した．
+ファイルScancode map を編集した．
+Scancode map は新規で作成したファイルである．
+デフォルトに戻すときはこのファイルを削除して再起動する．
+
+Scancode map へは，ファイル名を指定して実行からregeditを検索して飛ぶ．
