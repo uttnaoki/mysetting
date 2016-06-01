@@ -1,7 +1,5 @@
-Caps Lock → Ctrl
-に変更した．
-ファイルScancode map を編集した．
+ファイルScancode map を編集する．
 Scancode map は新規で作成したファイルである．
-デフォルトに戻すときはこのファイルを削除して再起動する．
+デフォルトのキーバインドに戻すときはこのファイルを削除して再起動する．
 
-Scancode map へは，ファイル名を指定して実行からregeditを検索して飛ぶ．
+Scancode map へは，ファイル名を指定して実行 から regedit を検索して飛ぶ．
