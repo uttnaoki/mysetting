@@ -1,5 +1,28 @@
-ファイルScancode map を編集する．
+Caps Lock → Ctrl
+に変更した．
+ファイルScancode map を編集した．
 Scancode map は新規で作成したファイルである．
-デフォルトのキーバインドに戻すときはこのファイルを削除して再起動する．
+デフォルトに戻すときはこのファイルを削除して再起動する．
 
-Scancode map へは，ファイル名を指定して実行 から regedit を検索して飛ぶ．
+Scancode map へは，ファイル名を指定して実行からregeditを検索して飛ぶ．
+
+
+↓サイトに書いてあったやつ(http://www.salutesound.com/~oss_keyswap.html)
+01) ［スタート］ボタンをクリック
+02) ［ファイル名を指定して実行］をクリック
+03) ［regedit］と打ち込み、エンター
+04) ［HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layout］を開く
+05) ［編集］→［新規］→［バイナリ値］とクリックし、値の名前を「Scancode Map」にする
+06) Scancode Mapを右クリック→［バイナリデータの編集］をクリックし、16進で以下の値を入力する
+
+00 00 00 00
+00 00 00 00
+05 00 00 00
+1d 00 3a 00
+3a 00 1d 00
+01 00 29 00
+29 00 01 00
+00 00 00 00
+
+07) レジストリエディタを終了する
+08) 再起動する
