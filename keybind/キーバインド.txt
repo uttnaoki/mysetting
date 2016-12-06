@@ -26,3 +26,24 @@ Scancode map へは，ファイル名を指定して実行からregeditを検索
 
 07) レジストリエディタを終了する
 08) 再起動する
+
+↓別サイトに書いてあった各キーのスキャンコード一覧(http://yanor.net/wiki/?Windows%2FTIPS%2F%E3%83%AC%E3%82%B8%E3%82%B9%E3%83%88%E3%83%AA%E3%82%92%E4%BF%AE%E6%AD%A3%E3%81%97%E3%81%A6CAPSLOCK%E3%81%AE%E5%89%B2%E3%82%8A%E5%BD%93%E3%81%A6%E5%A4%89%E6%9B%B4)
+
+キー       キースキャンコード  レジストリで設定する値
+Alt(右)    0xE038          38E0
+Alt(左)    0x38            3800
+CapsLock   0x3A            3A00
+Ctrl(右)   0xE01D          1DE0
+Ctrl(左)   0x1D            1D00
+Esc        0x01	
+F11～F12    0x57～0x58	
+F1～F10     0x3B～0x44	
+NumLock     0x45	
+ScrollLock  0x46	
+Windows(右) 0xE05C         5CE0
+Windows(左) 0xE05B         5BE0
+ひらがな     0x70	
+スペース     0x39	
+半角/全角    0x29	
+変換        0x79	
+無変換       0x7B	
