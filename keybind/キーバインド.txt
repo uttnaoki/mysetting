@@ -1,28 +1,28 @@
-Caps Lock �� Ctrl
-�ɕύX�����D
-�t�@�C��Scancode map ��ҏW�����D
-Scancode map �͐V�K�ō쐬�����t�@�C���ł���D
-�f�t�H���g�ɖ߂��Ƃ��͂��̃t�@�C�����폜���čċN������D
+Caps Lock → Ctrl
+に変更した．
+ファイルScancode map を編集した．
+Scancode map は新規で作成したファイルである．
+デフォルトに戻すときはこのファイルを削除して再起動する．
 
-Scancode map �ւ́C�t�@�C�������w�肵�Ď��s����regedit���������Ĕ�ԁD
+Scancode map へは，ファイル名を指定して実行からregeditを検索して飛ぶ．
 
 
-���T�C�g�ɏ����Ă��������(http://www.salutesound.com/~oss_keyswap.html)
-01) �m�X�^�[�g�n�{�^�����N���b�N
-02) �m�t�@�C�������w�肵�Ď��s�n���N���b�N
-03) �mregedit�n�Ƒł����݁A�G���^�[
-04) �mHKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layout�n���J��
-05) �m�ҏW�n���m�V�K�n���m�o�C�i���l�n�ƃN���b�N���A�l�̖��O���uScancode Map�v�ɂ���
-06) Scancode Map���E�N���b�N���m�o�C�i���f�[�^�̕ҏW�n���N���b�N���A16�i�ňȉ��̒l����͂���
+↓サイトに書いてあったやつ(http://www.salutesound.com/~oss_keyswap.html)
+01) ［スタート］ボタンをクリック
+02) ［ファイル名を指定して実行］をクリック
+03) ［regedit］と打ち込み、エンター
+04) ［HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layout］を開く
+05) ［編集］→［新規］→［バイナリ値］とクリックし、値の名前を「Scancode Map」にする
+06) Scancode Mapを右クリック→［バイナリデータの編集］をクリックし、16進で以下の値を入力する
 
-00 00 00 00
-00 00 00 00
-05 00 00 00
-1d 00 3a 00
-3a 00 1d 00
-01 00 29 00
-29 00 01 00
-00 00 00 00
+00 00 00 00 // バージョン
+00 00 00 00 // フラグ
+05 00 00 00 // エントリ数(割り当てを変更するキーの数+1。この+1は最後のターミネートの分)
+1d 00 3a 00 // 下位2バイトのキー(0x001d:左Ctrl)を上位2バイトキー(0x003a:CapsLock)に割り当てる
+3a 00 1d 00 // 下位2バイトのキーを上位2バイトのキーに割り当てる(上とセットでキーの入れ替え)
+01 00 29 00 // 下位2バイトのキー(0x0001:ESC)を上位2バイトキー(0x0029:半角全角)に割り当てる
+29 00 01 00 // 下位2バイトのキーを上位2バイトのキーに割り当てる(上とセットでキーの入れ替え)
+00 00 00 00 // ターミネート
 
-07) ���W�X�g���G�f�B�^���I������
-08) �ċN������
+07) レジストリエディタを終了する
+08) 再起動する
