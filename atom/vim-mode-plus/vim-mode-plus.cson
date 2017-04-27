@@ -48,15 +48,10 @@
   'up': 'vim-mode-plus:move-up'
   'down': 'vim-mode-plus:move-down'
 
-  'g k': 'vim-mode-plus:move-up-screen'
-  'g j': 'vim-mode-plus:move-down-screen'
-
   'w': 'vim-mode-plus:move-to-next-word'
   'W': 'vim-mode-plus:move-to-next-whole-word'
   'e': 'vim-mode-plus:move-to-end-of-word'
-  'g e': 'vim-mode-plus:move-to-previous-end-of-word'
   'E': 'vim-mode-plus:move-to-end-of-whole-word'
-  'g E': 'vim-mode-plus:move-to-previous-end-of-whole-word'
   'b': 'vim-mode-plus:move-to-previous-word'
   'B': 'vim-mode-plus:move-to-previous-whole-word'
 
@@ -71,7 +66,6 @@
   '_': 'vim-mode-plus:move-to-first-character-of-line-and-down'
   'ctrl-l': 'vim-mode-plus:move-to-last-character-of-line'
   'end': 'vim-mode-plus:move-to-last-character-of-line'
-  'g _': 'vim-mode-plus:move-to-last-nonblank-character-of-line-and-down'
   '-': 'vim-mode-plus:move-to-first-character-of-line-up'
   '+': 'vim-mode-plus:move-to-first-character-of-line-down'
   'enter': 'vim-mode-plus:move-to-first-character-of-line-down'
@@ -85,7 +79,7 @@
   'ctrl-y': 'vim-mode-plus:scroll-up'
 
   'G': 'vim-mode-plus:move-to-last-line'
-  'g g': 'vim-mode-plus:move-to-first-line'
+  'g': 'vim-mode-plus:move-to-first-line'
   'H': 'vim-mode-plus:move-to-top-of-screen'
   'L': 'vim-mode-plus:move-to-bottom-of-screen'
   'M': 'vim-mode-plus:move-to-middle-of-screen'
@@ -101,16 +95,11 @@
   'C': 'vim-mode-plus:change-to-last-character-of-line'
   'S': 'vim-mode-plus:substitute-line'
   'r': 'vim-mode-plus:replace'
-  'g o': 'vim-mode-plus:toggle-preset-occurrence'
-  'g O': 'vim-mode-plus:toggle-preset-subword-occurrence'
-  'g .': 'vim-mode-plus:add-preset-occurrence-from-last-occurrence-pattern'
 
-  'g I': 'vim-mode-plus:insert-at-beginning-of-line'
   '>': 'vim-mode-plus:indent'
   '<': 'vim-mode-plus:outdent'
   '=': 'vim-mode-plus:auto-indent'
   'J': 'vim-mode-plus:join'
-  'g J': 'vim-mode-plus:join-with-keeping-space'
   'y': 'vim-mode-plus:yank'
   'Y': 'vim-mode-plus:yank-line'
   'P': 'vim-mode-plus:put-before'
@@ -118,21 +107,9 @@
 
   # String transformation
   '~': 'vim-mode-plus:toggle-case-and-move-right'
-  'g ~': 'vim-mode-plus:toggle-case'
-  'g U': 'vim-mode-plus:upper-case'
-  'g u': 'vim-mode-plus:lower-case'
-  'g c': 'vim-mode-plus:camel-case'
-  'g C': 'vim-mode-plus:pascal-case'
-  'g /': 'vim-mode-plus:toggle-line-comments'
-  'g -': 'vim-mode-plus:dash-case'
-  'g space': 'vim-mode-plus:compact-spaces'
-  'g q': 'vim-mode-plus:auto-flow'
-  'g |': 'vim-mode-plus:trim-string'
-  'g cmd-d': 'vim-mode-plus:select-occurrence'
 
   'ctrl-a': 'vim-mode-plus:increase'
-  'ctrl-shift-a': 'vim-mode-plus:decrease'
-  'g ctrl-a': 'vim-mode-plus:increment-number' # experimental
+  'ctrl-q': 'vim-mode-plus:decrease'
   'ctrl-w w': 'window:focus-next-pane'
 
   # From v1.6.0
@@ -148,8 +125,6 @@
   'ctrl-w c': 'pane:close'
   'ctrl-w ctrl-q': 'core:close'
   'ctrl-w q': 'core:close'
-  'g t': 'pane:show-next-item'
-  'g T': 'pane:show-previous-item'
 
   'f': 'vim-mode-plus:find'
   'F': 'vim-mode-plus:find-backwards'
@@ -164,8 +139,6 @@
   '#': 'vim-mode-plus:search-current-word-backwards'
   'n': 'vim-mode-plus:repeat-search'
   'N': 'vim-mode-plus:repeat-search-reverse'
-  'g n': 'vim-mode-plus:search-match-forward'
-  'g N': 'vim-mode-plus:search-match-backward'
 
   '%': 'vim-mode-plus:move-to-pair'
 
@@ -330,15 +303,15 @@
   'a': 'vim-mode-plus:insert-after'
   'I': 'vim-mode-plus:insert-at-first-character-of-line'
   'A': 'vim-mode-plus:insert-after-end-of-line'
-  'g i': 'vim-mode-plus:insert-at-last-insert'
+  # 'g i': 'vim-mode-plus:insert-at-last-insert'
   'D': 'vim-mode-plus:delete-to-last-character-of-line'
 
   'R': 'vim-mode-plus:activate-replace-mode'
   'v': 'vim-mode-plus:activate-characterwise-visual-mode'
   'V': 'vim-mode-plus:activate-linewise-visual-mode'
-  'g v': 'vim-mode-plus:select-previous-selection'
+  # 'g v': 'vim-mode-plus:select-previous-selection'
   'u': 'vim-mode-plus:undo'
-  'ctrl-U': 'vim-mode-plus:redo'
+  'U': 'vim-mode-plus:redo'
   'O': 'vim-mode-plus:insert-above-with-newline'
   'o': 'vim-mode-plus:insert-below-with-newline'
   'x': 'vim-mode-plus:delete-right'
@@ -455,7 +428,6 @@
   # [NOTE] subject to change in future
   'i c': 'vim-mode-plus:inner-latest-change'
   'a c': 'vim-mode-plus:a-latest-change'
-  'g v': 'vim-mode-plus:previous-selection'
 
   'i r': 'vim-mode-plus:inner-persistent-selection'
   'a r': 'vim-mode-plus:a-persistent-selection'
