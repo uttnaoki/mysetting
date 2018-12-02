@@ -1,0 +1,32 @@
+'body':
+  # 保存，コピー，ペースト
+  'ctrl-s': 'core:save'
+  'ctrl-c': 'core:copy'
+  'ctrl-v': 'core:paste'
+  # Undo, Redo
+  'ctrl-u': 'core:undo'
+  'ctrl-shift-U': 'core:redo'
+  # 行移動
+  'cmd-p': 'editor:move-line-up'
+  'cmd-n': 'editor:move-line-down'
+  'cmd-up': 'editor:move-line-up'
+  'cmd-down': 'editor:move-line-down'
+  # ブックマーク
+  'cmd-b': 'bookmarks:toggle-bookmark'
+  'shift-cmd-B': 'bookmarks:jump-to-previous-bookmark'
+  # デフォルトのキーバインドを移行
+  'shift-ctrl-D': 'editor:duplicate-lines'
+  'ctrl-/': 'editor:toggle-line-comments'
+  'ctrl-k': 'editor:delete-line'
+  'alt-cmd-p':'multi-cursor:expandUp'
+  'alt-cmd-n':'multi-cursor:expandDown'
+
+'.platform-darwin atom-text-editor':
+  'ctrl-shift-U': 'unset!'
+
+'atom-text-editor':
+  'ctrl-k': 'unset!'
+  'alt-cmd-p':'unset!'
+
+'atom-text-editor[data-grammar~="latex"]':
+  'ctrl-cmd-b': 'latex:build'
