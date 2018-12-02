@@ -94,6 +94,12 @@
         "key": "alt+f",
         "command": "actions.find"
     },
+    // コマンドパレット
+    {
+        "key": "alt+shift+p",
+        "command": "workbench.action.showCommands"
+    },
+    // 全選択
     {
         "key": "alt+a",
         "command": "editor.action.selectAll",
