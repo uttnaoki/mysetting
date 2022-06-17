@@ -58,7 +58,19 @@
     "command": "editor.action.moveLinesDownAction",
     "when": "editorTextFocus && !editorReadonly"
   },
-  // quickOpen (cmd+p -> cmd+shift+o)
+  // 行挿入（下）（vim: o）
+  {
+    "key": "ctrl+o",
+    "command": "editor.action.insertLineAfter",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  // 行挿入（上）（vim: shift+o）
+  {
+    "key": "ctrl+shift+o",
+    "command": "editor.action.insertLineBefore",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  // ファイル検索 (cmd+p -> cmd+shift+o)
   {
     "key": "cmd+shift+o",
     "command": "workbench.action.quickOpen"
