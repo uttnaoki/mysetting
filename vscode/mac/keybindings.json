@@ -58,9 +58,9 @@
     "command": "editor.action.moveLinesDownAction",
     "when": "editorTextFocus && !editorReadonly"
   },
-  // quickOpen (cmd+p -> ctrl+shift+o)
+  // quickOpen (cmd+p -> cmd+shift+o)
   {
-    "key": "ctrl+shift+o",
+    "key": "cmd+shift+o",
     "command": "workbench.action.quickOpen"
   },
   // newUntitledFile (cmd+n -> shift+cmd+n)
